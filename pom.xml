@@ -56,6 +56,13 @@
 			<version>5.7.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -67,7 +74,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<includes>
-						<include>**/*RegressionRunner.java</include>
+						<include>**/*testRunner.java</include>
 					</includes>
 					<testFailureIgnore>true</testFailureIgnore>
 
@@ -85,7 +92,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>Hrms</projectName>
+							<projectName>RedTeamHrms</projectName>
 
 							<!-- output directory for the generated report -->
 							<outputDirectory>${project.build.directory}</outputDirectory>
